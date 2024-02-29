@@ -1,0 +1,100 @@
+.Header{
+    display:flex;
+    background-color: black;
+    color:#fff;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 21px;
+    .header-first {
+        .sidebar{
+            width:20vw;
+            height:100vh;
+            position: fixed;
+            top:0;
+            left:0;
+            background-color: #fff;
+            color:#000;
+            display: flex;
+            flex-direction: column;
+            z-index: 5  ;
+            .sidebar-cross{
+                height:10vh;
+                font-size: 26px;
+                align-items: center;
+                display: flex;
+                margin-left: 12px;
+            }
+
+            .sidebar-body{
+                background-color: #000;
+                color:#fff;
+                flex:1;
+
+                p,.link{
+
+                    display: flex;
+                    margin: 12px 20px;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color:#fff;
+                    text-decoration: none;
+                    // word-spacing: 12px;
+                    &:hover{
+                        background-color: #fff;
+                        color: #000;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        img{
+            width: 51px;
+            height: 51px;
+            margin-left: 21px;
+        }
+    }
+    .header-second {
+        img{
+            width: 51px;
+            height: 51px;
+            margin-left: 21px;
+            border-radius: 36px;
+            position: relative;
+        }
+        .model{
+            position: absolute;
+            z-index: 1;
+            background-color: #fff;
+            color:#000;
+            font-size: 15px;
+            right:10px;
+            top:10vh;
+            border-radius: 21px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding:12px;
+            a{
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                text-decoration: none;
+                color: #020202;
+                padding:2px
+            }
+            .muted{
+                color:#312121;
+            }
+        }
+       
+    }
+}
+
+.model-close{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+}
